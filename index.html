@@ -19,81 +19,17 @@
   </title>
 </head>
 
-<body>
-
-  <div class="context">
-    <form action="./search" autocomplete="off" onsubmit="return checkValues()"
-      onkeydown="document.getElementById('search-bar').classList.remove('failedSearch');">
-      <input name="search" id="search-bar" class="search-text" type="text">
-
-      <input type="submit" id="submit-search" class="search-button" value="">
-      <input type="button" id="advanced-search" class="search-button" onclick="this.classList.toggle('active')"
-        value="">
-      <div id="advanced-menu">
-        <label>search exact words:</label>
-        <input id="exact" name="exact" type="checkbox" />
-        <br>
-        <fieldset id="search-filters">
-          <legend>search using..</legend>
-          <label>title</label>
-          <input value="title" type="checkbox" checked />
 
           <br />
 
-          <label>description</label>
-          <input value="desc" type="checkbox" checked />
+          <label>Is this the best site ever?</label>
+          <input value="Is this the best site ever?" type="checkbox" />
+    
+              <label>Has it got banned yet if so cick for new url</label>
+          <input value="Is this the best site ever?" type="checkbox" />
 
-          <br />
-
-          <label>tags</label>
-          <input value="tags" type="checkbox" checked />
-
-          <br />
-
-          <label>urls</label>
-          <input value="urls" type="checkbox" checked />
-
-          <br />
-
-          <label>creator</label>
-          <input value="create" type="checkbox" checked />
-
-          <br />
-
-          <label>series</label>
-          <input value="series" type="checkbox" checked />
-
-          <br />
-
-          <label>uploader</label>
-          <input value="uploader" type="checkbox" />
-
-
-          <input id="filters" name="include" type="hidden" value="" />
-        </fieldset>
-        <br>
-        <div id="tag-container" class="text-container">
-          <label>tags: </label>
-          <input type="text" id="tag-search" class="search-text"
-            onkeydown="if(event.keyCode==13){event.preventDefault();addTag()}" />
-          <input type="hidden" name="tags" value="" id="tags" />
-          <span id="submit-tag" onclick="addTag();">+</span>
-        </div>
-        <div id="tag-list">
-        </div>
-        <div id="series-container" class="text-container">
-          <label>series: </label>
-          <input type="text" id="series" name="series" class="search-text"
-            onkeydown="if(event.keyCode==13){event.preventDefault(); document.getElementById('creator').focus()}" />
-        </div>
-        <div id="creator-container" class="text-container">
-          <label>creator: </label>
-          <input type="text" id="creator" name="create" class="search-text"
-            onkeydown="if(event.keyCode==13){event.preventDefault(); document.getElementById('uploader').focus()}" />
-        </div>
-        <div id="uploader-container" class="text-container">
-          <label>uploader: </label>
-          <input type="text" id="uploader" name="uploader" class="search-text" />
+ 
+      
         </div>
       </div>
     </form>
@@ -116,7 +52,11 @@
        
         </span><br><br>
         <span class="dotted blue">
-          <b>WE DONT LIKE IPAD USERS HERE THANK YOU CHROMEBOOKS ONLY     THE SEARCHBAR ALSO DOESNT WORK DUE TO STREETLY PROXY WORKING ON FIX</b><br>
+          <b>WE DONT LIKE IPAD USERS HERE THANK YOU CHROMEBOOKS ONLY</b><br>
+          
+                  </span><br><br>
+        <span class="dotted blue">
+          <b>THE SEARCHBAR ALSO DOESNT WORK DUE TO STREETLY PROXY, WORKING ON FIX</b><br>
         </b>
         </span> <br><br>
         <iframe frameBorder="none" height="300" width="500"
@@ -186,6 +126,3 @@
     </ul>
 
   </div>
-</body>
-
-</html>
